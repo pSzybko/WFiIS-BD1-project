@@ -1,0 +1,237 @@
+/* body{
+    margin: 0px;
+    background-color:hsl(206, 28%, 26%, 0.5);
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    font-family: 'Cardo', serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+} */
+body {
+	margin: 0;
+	background: linear-gradient(45deg, #49a09d, #5f2c82);
+	font-family: sans-serif;
+	font-weight: 100;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+ul li::marker{
+    color:#55608f;
+    content:"∘";
+    margin:10px;
+}
+input[type="submit"], input[type="button"] {
+    overflow: hidden;
+    text-transform: uppercase;
+    /* transition: all 0.1s ease; */
+}
+input[type="submit"]:hover, input[type="button"]:hover {
+    overflow: hidden;
+    background: rgba(255,255,255,0.8);
+    color: #fff;
+}
+table {
+    margin-top: 50px;
+	width: 1200px;
+	border-collapse: collapse;
+	overflow: hidden;
+	box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th,
+td {
+	padding: 15px;
+	background-color: rgba(255,255,255,0.2);
+	color: #fff;
+    text-align: center;
+}
+
+th {
+	text-align: center;
+}
+
+thead th {
+	background-color: #55608f;
+}
+
+tbody tr:hover{background-color: rgba(255,255,255,0.3);}
+	
+tbody td {position: relative;}
+
+tobdy td:hover::before{
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: -9999px;
+	bottom: -9999px;
+	background-color: rgba(255,255,255,0.2);
+	z-index: -1;
+}
+
+header{
+    /* background-color: #376E6F; */
+    background-color:hsl(206, 28%, 26%, 0.5);
+}
+header::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+#mainHeader{
+    width:90%;
+    margin: 0 auto;
+    padding-top:10px;
+}
+nav{
+    float:right;
+    padding-top: 30px;
+}
+nav ul{
+    list-style: none;
+}
+nav li{
+    display: inline-block;
+    margin-left: 30px;
+    position: relative;
+}
+nav a{
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    cursor: pointer;
+}
+nav a:hover {
+    color:rgba(255,255,255,0.3);
+}
+nav a::before {
+    content: '';
+    display: block;
+    height: 3px;
+    background-color: rgba(255,255,255,0.3);
+  
+    position: absolute;
+    top: 0;
+    width: 0%;
+  
+    transition: all ease-in-out 300ms;
+}
+nav a:hover::before {
+    width: 100%;
+}
+.MyDivElement{
+    display: none;
+    /* background-color:#2F4454; */
+    background-color: rgba(0, 0, 0, 0.3);
+    min-height: 80vh;
+    font-size: larger;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    text-align: center;
+}
+#MyHomeScreen{
+    display:unset;
+    padding: 0 0 0 0;
+    text-transform: uppercase;
+    font-size: 60px;
+    text-align: center;
+    margin-top: 15%;
+    margin-bottom: 15%;
+}
+#MyHomeScreen > #HomeScreen{
+    /* background-color: red; */
+    margin-top: 15%;
+}
+#zamow{
+    text-align: center;
+}
+footer {
+    /* color: white; */
+    margin-top: auto;
+    margin-left: 10px;
+    font-size: small;
+}
+#main_user{
+    /* font-size: larger; */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top:10%;
+    margin-bottom:5%;
+}
+#main_user label[for=uzyt]{
+    margin: 50px;
+    font-size: xx-large;
+}
+#main_manager{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input[type="button"], input[type="submit"]{
+    border-style: solid;
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+	background: none;
+	cursor: pointer;
+	padding: 10px 10px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 400;
+	outline: none;
+	position: relative;
+    margin:5px;
+}
+input[type=email], input[type=number], input[type=text], input[type=time], textarea{
+    border-style: solid;
+	font-family: inherit;
+	 font-size: inherit;
+	color: inherit;
+	background: none;
+	padding: 10px 10px;
+	letter-spacing: 1px;
+	font-weight: 400;
+	outline: none;
+	position: relative;
+    margin:5px;
+}
+
+select{
+    border-style: solid;
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+	background: none;
+    background-color: #55608f;
+	cursor: pointer;
+	padding: 10px 10px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 400;
+	outline: none;
+	position: relative;
+}
+#manager_login{
+    /* font-size: xx-large; */
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+#manager_login label{
+    font-size: xx-large;
+}
+#powrot{
+    text-align: center;
+}
